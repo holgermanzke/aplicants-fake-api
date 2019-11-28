@@ -31,7 +31,7 @@ function App() {
       <GlobalStyles />
       <Router>
         <Container>
-          <Header>Aplicants DB</Header>
+          <Header>Applicants DB</Header>
           <Main>
             <Switch>
               <Route exact path="/">
