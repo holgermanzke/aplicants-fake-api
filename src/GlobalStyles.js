@@ -15,6 +15,8 @@ export default function GlobalStyles() {
           font-family: "Ubuntu Condensed", sans-serif;
           background: ${theme.background};
           color: ${theme.text};
+          height: 100vh;
+          width: 100vw;
         }
       `}
     />
