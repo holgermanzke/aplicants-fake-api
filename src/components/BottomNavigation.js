@@ -6,11 +6,11 @@ export default function BottomNavigation() {
   const location = useLocation();
   const Container = styled.div`
     display: flex;
-    justify-content: space-around;
     height: 100%;
   `;
   const NavigationLink = styled(Link)`
     flex-grow: 1;
+    flex-basis: 0;
     text-decoration: none;
     background: ${props =>
       props.active ? props.theme.text : props.theme.secondary};
@@ -22,15 +22,16 @@ export default function BottomNavigation() {
     align-items: center;
     font-size: 1.4rem;
     font-weight: 600;
+    flex-grow: 1;
   `;
 
   return (
     <Container>
       <NavigationLink to="/" active={location.pathname === "/"}>
-        Home
+        Applicants
       </NavigationLink>
       <NavigationLink to="/new" active={location.pathname === "/new"}>
-        New
+        Add
       </NavigationLink>
     </Container>
   );

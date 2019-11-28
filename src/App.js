@@ -15,6 +15,11 @@ const Container = styled.div`
 const Header = styled.div`
   height: 60px;
   background: ${props => props.theme.secondary};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.8rem;
 `;
 
 const Main = styled.main`
@@ -35,10 +40,10 @@ function App() {
           <Main>
             <Switch>
               <Route exact path="/">
-                <div>APP</div>
+                <div>Applicants</div>
               </Route>
               <Route exact path="/new">
-                <div>New</div>
+                <div>Add</div>
               </Route>
             </Switch>
           </Main>

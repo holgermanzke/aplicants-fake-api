@@ -12,7 +12,7 @@ export default function GlobalStyles() {
         body {
           margin: 0;
           font-size: 16px;
-          font-family: "Ubuntu Condensed", sans-serif;
+          font-family: "Ubuntu Mono", monospace;
           background: ${theme.background};
           color: ${theme.text};
           height: 100vh;
