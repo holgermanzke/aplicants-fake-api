@@ -5,6 +5,7 @@ import { themes } from "./themes/themes";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import BottomNavigation from "./components/BottomNavigation";
 import styled from "@emotion/styled";
+import Applicants from "./pages/ApplicantsList";
 
 const Container = styled.div`
   display: flex;
@@ -40,7 +41,7 @@ function App() {
           <Main>
             <Switch>
               <Route exact path="/">
-                <div>Applicants</div>
+                <Applicants />
               </Route>
               <Route exact path="/new">
                 <div>Add</div>
