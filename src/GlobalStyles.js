@@ -4,7 +4,7 @@ import { Global, css } from "@emotion/core";
 export default function GlobalStyles() {
   return (
     <Global
-      styles={css`
+      styles={theme => css`
         *,
         *::after *::before {
           box-sizing: border-box;
@@ -13,6 +13,8 @@ export default function GlobalStyles() {
           margin: 0;
           font-size: 16px;
           font-family: "Ubuntu Condensed", sans-serif;
+          background: ${theme.background};
+          color: ${theme.text};
         }
       `}
     />
